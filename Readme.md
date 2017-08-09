@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Марина Гандерсен](https://up.htmlacademy.ru/htmlcss/18/user/243875).
-* Наставник: `Максим Клевцов`.
+* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov).
 
 ---
 
