@@ -1,0 +1,64 @@
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #283136;
+}
+
+.products .products-category-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+.specialties .specialties-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+.features .features-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+.contacts-info .contacts-info-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+.modal h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+.inner-page .filter-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*main-nav 500 16px 30px*/

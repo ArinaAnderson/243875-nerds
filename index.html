@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -11,7 +12,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a class="header-logo">
-          <img src="" alt="Дизайн-студия nёrds" width="161" height="65">
+          <img src="img/header-logo.svg" alt="Дизайн-студия nёrds" width="161" height="65">
         </a>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
@@ -134,7 +135,7 @@
       </div>
       <div class="columns-right">
         <a class="about-us-logo">
-          <img src="" alt="Дизайн-студия nёrds" width="360" height="208">
+          <img src="img/about-us-logo.png" alt="Дизайн-студия nёrds" width="360" height="208">
         </a>
         <section class="features">
           <h3 class="features-title">
@@ -159,16 +160,16 @@
     <section class="portfolio">
         <h2 class="visually-hidden">Портфолио Дизайн-студии nёrds</h2>
         <a class="portfolio-item portfolio-item-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="" alt="HTMLAcademy" width="199" height="68">
+          <img src="img/logo-htmlacademy.png" alt="HTMLAcademy" width="199" height="68">
         </a>
         <a class="portfolio-item portfolio-item-borodinskiy" href="#">
-          <img src="" alt="Барбершоп Бородинский" width="209" height="86">
+          <img src="img/logo-barbershop.png" alt="Барбершоп Бородинский" width="209" height="86">
         </a>
         <a class="portfolio-item portfolio-item-pink" href="#">
-          <img src="" alt="Pink" width="185" height="52">
+          <img src="img/logo-pink.png" alt="Pink" width="185" height="52">
         </a>
         <a class="portfolio-item portfolio-item-mishka" href="#">
-          <img src="" alt="Мишка" width="173" height="84">
+          <img src="img/logo-mishka.png" alt="Мишка" width="173" height="84">
         </a>
     </section> 
   </main>
@@ -193,7 +194,7 @@
           </a>
         </div>
         <a class="footer-logo">
-          <img src="" alt="Дизайн-студия nёrds" width="201" height="190">
+          <img src="img/map-marker.png" alt="Дизайн-студия nёrds" width="201" height="190">
         </a>
       </section>
       <section class="footer-social">
@@ -219,5 +220,25 @@
       </section>
     </div>
   </footer>
+
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="fullname">Ваше имя:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p>  
+        <textarea placeholder="В свободной форме">
+        </textarea>
+      </p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    <span class="modal-close"></span>
+  </section>
 </body>
 </html>
