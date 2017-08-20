@@ -14,15 +14,14 @@
         <a class="header-logo">
           <img src="img/header-logo.svg" alt="Дизайн-студия nёrds" width="161" height="65">
         </a>
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
+          <li class="header-cart"><a href="cart.html">Корзина</a></li>
         </ul>
-        <div class="header-cart">
-          <a href="cart.html">Корзина</a>
-        </div>
       </nav>
 
       <section class="header-slider">
@@ -31,9 +30,9 @@
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <label for="btn-1"><h3 class="visually-hidden">Слайд 1</h3></label>
+          <label for="btn-2"><h3 class="visually-hidden">Слайд 2</h3></label>
+          <label for="btn-3"><h3 class="visually-hidden">Слайд 3</h3></label>
         </div>
         <div class="header-slider-content">
           <div class="header-slider-slides">
@@ -77,6 +76,7 @@
   </header>
 
   <main class="container">
+    <h2 class="visually-hidden">Услуги дизайн-студии nerds</h2>
     <ul class="products">
       <li class="products-category products-category-1">
         <h3 class="products-category-title">
@@ -160,16 +160,16 @@
     <section class="portfolio">
         <h2 class="visually-hidden">Портфолио Дизайн-студии nёrds</h2>
         <a class="portfolio-item portfolio-item-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.png" alt="HTMLAcademy" width="199" height="68">
+          <img src="img/logo-htmlacademy.png" alt="переход на сайт HTMLAcademy" width="199" height="68">
         </a>
         <a class="portfolio-item portfolio-item-borodinskiy" href="#">
-          <img src="img/logo-barbershop.png" alt="Барбершоп Бородинский" width="209" height="86">
+          <img src="img/logo-barbershop.png" alt="переход на сайт Барбершоп Бородинский" width="209" height="86">
         </a>
         <a class="portfolio-item portfolio-item-pink" href="#">
-          <img src="img/logo-pink.png" alt="Pink" width="185" height="52">
+          <img src="img/logo-pink.png" alt="переход на сайт Pink" width="185" height="52">
         </a>
         <a class="portfolio-item portfolio-item-mishka" href="#">
-          <img src="img/logo-mishka.png" alt="Мишка" width="173" height="84">
+          <img src="img/logo-mishka.png" alt="переход на сайт Мишка" width="173" height="84">
         </a>
     </section> 
   </main>
@@ -189,9 +189,10 @@
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a class="btn" href="#">
+          <button class="btn" type="button">
             Напишите нам
-          </a>
+          </button>
+          <img src="img/map&marker.png" alt="" width="1440" height="415">
         </div>
         <a class="footer-logo">
           <img src="img/map-marker.png" alt="Дизайн-студия nёrds" width="201" height="190">
@@ -199,14 +200,11 @@
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Дизайн-студия nёrds в социальных сетях</h2>
-        <a class="social-btn social-btn-vk">
-          Вконтакте
+        <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
         </a>
-        <a class="social-btn social-btn-fb">
-          Facebook
+        <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
         </a>
-        <a class="social-btn social-btn-inst">
-          Instagram
+        <a class="social-btn social-btn-inst" href="#" aria-label="Instagram">
         </a>
       </section>
       <section class="footer-promo">
@@ -238,7 +236,7 @@
       </p>
       <button class="btn" type="submit">Отправить</button>
     </form>
-    <span class="modal-close"></span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
