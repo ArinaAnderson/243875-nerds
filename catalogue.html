@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -19,7 +20,7 @@
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><span class="current">Магазин</span></li>
           <li><a href="contacts.html">Контакты</a></li>
           <li class="header-cart"><a href="cart.html">Корзина</a></li>
         </ul>
@@ -34,39 +35,38 @@
       <fieldset class="filter-form-price">
         <legend class="filter-name">Стоимость:</legend>
         <div class="price-indicator">
-          <input type="range" min="0" max="">
         </div><!--to look up one with 2 toggles!!-->
         <p class="price-range">
           <label for="min-price">от </label><input type="text" id="min-price" name="min-price">
-          <label for="max-price">до</label><input type="text" id="max-price" name="max-price">
+          <label for="max-price">до </label><input type="text" id="max-price" name="max-price">
         </p>
       </fieldset>
-      <fieldset class="filter-form-grid">
+      <fieldset class="filter-form-group">
         <legend class="filter-name">Сетка:</legend>
-          <input type="radio" id="adaptive" name="grid" value="adaptive">
-          <label for="adaptive">Адаптивная</label>
-          <input type="radio" id="fixed" name="grid" value="fixed">
-          <label for="fixed">Фиксированная</label>
-          <input type="radio" id="responsive" name="grid" value="responsive">
+        <input class="visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive" checked>
+        <label for="adaptive">Адаптивная</label>
+        <input class="visually-hidden" type="radio" id="fixed" name="grid" value="fixed">
+        <label for="fixed">Фиксированная</label>
+        <input class="visually-hidden" type="radio" id="responsive" name="grid" value="responsive">
           <label for="responsive">Резиновая</label>
       </fieldset>
-      <fieldset class="filter-form-features">
+      <fieldset class="filter-form-group">
         <legend class="filter-name">Особенности:</legend>
        
-          <input type="checkbox" id="slider" name="slider">
-          <label for="slider">Слайдер</label>
+        <input class="visually-hidden" type="checkbox" id="slider" name="slider">
+        <label for="slider">Слайдер</label>
           
-          <input type="checkbox" id="features-list" name="features-list">
-          <label for="features-list">Блок преимуществ</label>
+        <input class="visually-hidden" type="checkbox" id="features-list" name="features-list">
+        <label for="features-list">Блок преимуществ</label>
           
-          <input type="checkbox" id="news" name="news">
-          <label for="news">Новости</label>
+        <input class="visually-hidden" type="checkbox" id="news" name="news">
+        <label for="news">Новости</label>
           
-          <input type="checkbox" id="gallery" name="gallery">
-          <label for="gallery">Галерея</label>
+        <input class="visually-hidden" type="checkbox" id="gallery" name="gallery">
+        <label for="gallery">Галерея</label>
           
-          <input type="checkbox" id="cart" name="cart">
-          <label for="cart">Корзина</label>
+        <input class="visually-hidden" type="checkbox" id="cart" name="cart">
+        <label for="cart">Корзина</label>
       </fieldset>
       <button class="btn" type="submit">Показать</button>
     </form>
@@ -84,43 +84,43 @@
       </div>
       <article class="catalogue-item">
         <a href="#">
-          <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="" height="">
+          <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358" height="576">
         </a>
         <section class="catalogue-item-data">
-          <a href="#"><h3>Sedona</h3></a>
+          <a class="catalogue-item-title" href="#"><h3>Sedona</h3></a>
           <p>Информационный сайт для туристов</p>
           <a class="btn" href="#">9 900 руб.</a>
         </section>
       </article>
       <article class="catalogue-item">
         <a href="#">
-          <img src="img/img-pink.jpg" alt="Сайт Pink" width="" height="">
+          <img src="img/img-pink.jpg" alt="Сайт Pink" width="358" height="574">
         </a>
       </article>
       <article class="catalogue-item">
         <a href="#">
-          <img src="img/img-barbershop.jpg" alt="Сайт Барбершоп Бородинский" width="" height="">
+          <img src="img/img-barbershop.jpg" alt="Сайт Барбершоп Бородинский" width="358" height="574">
         </a>
       </article>
       <article class="catalogue-item">
         <a href="#" tabindex="0">
-          <img src="img/img-mishka.jpg" alt="Сайт Мишка" width="" height="">
+          <img src="img/img-mishka.jpg" alt="Сайт Мишка" width="358" height="574">
         </a>
       </article>
       <article class="catalogue-item">
         <a href="#">
-          <img src="img/img-aplus.jpg" alt="Сайт Aplus" width="" height="">
+          <img src="img/img-aplus.jpg" alt="Сайт Aplus" width="358" height="574">
         </a>
       </article>
       <article class="catalogue-item">
         <a href="#">
-          <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="" height="">
+          <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358" height="574">
         </a>
       </article>
        
       <h2 class="visually-hidden">Навигация по страницам</h2>
       <ul class="catalogue-paginaton">
-        <li class="current">
+        <li class="catalogue-paginaton-current">
           <span class="btn-page">1</span>
         </li>
         <li>
@@ -162,10 +162,13 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Студия в социальных сетях</h2>
         <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)"/></svg>
         </a>
         <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
+          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
         </a>
         <a class="social-btn social-btn-inst" href="#" aria-label="Instagram">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>insta-icon</title><path class="cls-1" d="M18,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V3A3,3,0,0,0,18,0ZM10.5,7A3.5,3.5,0,1,1,7,10.5,3.5,3.5,0,0,1,10.5,7ZM18,18H3V9H4.18A6.5,6.5,0,1,0,16.82,9H18ZM18,7H14V3h4Z"/></svg>
         </a>
       </section>
       <section class="footer-promo">
@@ -180,24 +183,24 @@
     </div>
   </footer>
 
-    <section class="modal modal-write-us">
+  <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="half-width">
         <label for="fullname">Ваше имя:</label>
         <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
       </p>
-      <p>
+      <p class="half-width">
         <label for="email">Ваш e-mail:</label>
         <input type="text" id="email" name="email" placeholder="Для отправки ответа">
       </p>
       <p>  
-        <textarea placeholder="В свободной форме">
-        </textarea>
+        <label for="text">Текст письма:</label>
+        <textarea id="text" placeholder="В свободной форме" rows="4"></textarea>
       </p>
       <button class="btn" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 </html>
