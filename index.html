@@ -21,15 +21,15 @@
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li class="header-cart"><a href="cart.html">Корзина</a></li>
         </ul>
+        <div class="header-cart"><a href="cart.html">Корзина</a></div>
       </nav>
 
       <section class="header-slider">
         <h2 class="visually-hidden">Отличительные особенности Дизайн-студии nёrds</h2>
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
           <label for="btn-1"><h3 class="visually-hidden">Слайд 1</h3></label>
           <label for="btn-2"><h3 class="visually-hidden">Слайд 2</h3></label>
@@ -116,7 +116,7 @@
 
     <section class="about-us">
       <h2 class="visually-hidden">Информация о студии</h2>
-      <div class="columns-top">
+      <div class="columns">
         <div class="columns-left">
           <b class="promo-slogan">
             Мы - маленькая, но гордая дизайн-студия из Краснодара.
@@ -132,20 +132,20 @@
         </div>
       </div> 
 
-      <div class="colums-bottom">
-        <div class="colums-left">
+      <div class="columns">
+        <div class="columns-left">
           <section class="specialties">
             <h3 class="specialties-title">
               Выполняем заказы на разработку:
             </h3>
-            <ul>
+            <ul class="specialties-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для IOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </section>
         </div>
-        <div class="colums-right">
+        <div class="columns-right">
           <section class="features">
             <h3 class="features-title">
               С 2004 года любим точность во всем:
@@ -184,7 +184,7 @@
     </section> 
   </main>
   
-  <footer class="main-footer">
+    <footer class="main-footer">
     <div class="container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты студии</h2>
@@ -202,36 +202,39 @@
           <button class="btn" type="button">
             Напишите нам
           </button>
-          <img src="img/map&marker.png" alt="" width="1440" height="415">
         </div>
-        <!--<a class="footer-logo">
-          <img src="img/map-marker.png" alt="Дизайн-студия nёrds" width="201" height="190">
-        </a>-->
+        <section class="footer-map">
+          <h2 class="visually-hidden">Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
+          <img src="img/map&marker.png" alt="" width="1440" height="416"> 
+        </section> 
       </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Дизайн-студия nёrds в социальных сетях</h2>
-        <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)" x=50% y=50%/></svg>
-        </a>
-        <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
-          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
-        </a>
-        <a class="social-btn social-btn-inst" href="#" aria-label="Instagram">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>insta-icon</title><path class="cls-1" d="M18,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V3A3,3,0,0,0,18,0ZM10.5,7A3.5,3.5,0,1,1,7,10.5,3.5,3.5,0,0,1,10.5,7ZM18,18H3V9H4.18A6.5,6.5,0,1,0,16.82,9H18ZM18,7H14V3h4Z"/></svg>
-        </a>
-      </section>
-      <section class="footer-promo">
-        <h2 class="visually-hidden">Скидки и спецпредложения</h2> 
-        <b class="promo-slogan">
-          Давайте дружить, это выгодно!
-        </b>
-        <p>
-          Скидка 10% для других из социальных сетей.
-        </p>
-      </section>
+      <div class="footer-bottom">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Дизайн-студия nёrds в социальных сетях</h2>
+          <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)" x=50% y=50%/></svg>
+          </a>
+          <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
+          </a>
+          <a class="social-btn social-btn-inst" href="#" aria-label="Instagram">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>insta-icon</title><path class="cls-1" d="M18,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V3A3,3,0,0,0,18,0ZM10.5,7A3.5,3.5,0,1,1,7,10.5,3.5,3.5,0,0,1,10.5,7ZM18,18H3V9H4.18A6.5,6.5,0,1,0,16.82,9H18ZM18,7H14V3h4Z"/></svg>
+          </a>
+        </section>
+        <section class="footer-promo">
+          <h2 class="visually-hidden">Скидки и спецпредложения</h2> 
+          <b class="promo-slogan">
+            Давайте дружить, это выгодно!
+          </b>
+          <p>
+            Скидка 10% для других из социальных сетей.
+          </p>
+        </section>
+      </div>
     </div>
   </footer>
 
+<div class="container">
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -251,5 +254,6 @@
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+</div>
 </body>
 </html>
