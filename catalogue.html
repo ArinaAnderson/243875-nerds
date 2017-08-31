@@ -37,38 +37,61 @@
       <fieldset class="filter-form-price">
         <legend class="filter-name">Стоимость:</legend>
         <div class="price-indicator">
-        </div><!--to look up one with 2 toggles!!-->
-        <p class="price-range">
-          <label for="min-price">от </label><input type="text" id="min-price" name="min-price">
-          <label for="max-price">до </label><input type="text" id="max-price" name="max-price">
-        </p>
+          <div class="scale">
+            <div class="bar" style="width:70%">
+            </div>
+          </div>
+          <div class="toggle min-toggle"></div>
+          <div class="toggle max-toggle"></div>
+        </div>
+        <div class="price-controls">
+          <p class="min-price">
+            <label for="min-price">от</label>
+            <input type="text" id="min-price" name="min-price" value="0">
+          </p>
+          <p class="max-price"> 
+            <label for="max-price">до</label>
+            <input type="text" id="max-price" name="max-price" value="15 000">
+          </p>
+        </div>
       </fieldset>
       <fieldset class="filter-form-group">
         <legend class="filter-name">Сетка:</legend>
-        <input class="visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive" checked>
-        <label for="adaptive">Адаптивная</label>
-        <input class="visually-hidden" type="radio" id="fixed" name="grid" value="fixed">
-        <label for="fixed">Фиксированная</label>
-        <input class="visually-hidden" type="radio" id="responsive" name="grid" value="responsive">
+        <p>
+          <input class="visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive" checked>
+          <label for="adaptive">Адаптивная</label>
+        </p>
+        <p>
+          <input class="visually-hidden" type="radio" id="fixed" name="grid" value="fixed">
+          <label for="fixed">Фиксированная</label>
+        </p>
+        <p>
+          <input class="visually-hidden" type="radio" id="responsive" name="grid" value="responsive">
           <label for="responsive">Резиновая</label>
+        </p>
       </fieldset>
       <fieldset class="filter-form-group">
         <legend class="filter-name">Особенности:</legend>
-       
-        <input class="visually-hidden" type="checkbox" id="slider" name="slider">
-        <label for="slider">Слайдер</label>
-          
-        <input class="visually-hidden" type="checkbox" id="features-list" name="features-list">
-        <label for="features-list">Блок преимуществ</label>
-          
-        <input class="visually-hidden" type="checkbox" id="news" name="news">
-        <label for="news">Новости</label>
-          
-        <input class="visually-hidden" type="checkbox" id="gallery" name="gallery">
-        <label for="gallery">Галерея</label>
-          
-        <input class="visually-hidden" type="checkbox" id="cart" name="cart">
-        <label for="cart">Корзина</label>
+        <p>
+          <input class="visually-hidden" type="checkbox" id="slider" name="slider">
+          <label for="slider">Слайдер</label>
+        </p>
+        <p>
+          <input class="visually-hidden" type="checkbox" id="features-list" name="features-list">
+          <label for="features-list">Блок преимуществ</label>
+        </p>
+        <p> 
+          <input class="visually-hidden" type="checkbox" id="news" name="news">
+          <label for="news">Новости</label>
+        </p>
+        <p>
+          <input class="visually-hidden" type="checkbox" id="gallery" name="gallery">
+          <label for="gallery">Галерея</label>
+        </p>
+        <p>
+          <input class="visually-hidden" type="checkbox" id="cart" name="cart">
+          <label for="cart">Корзина</label>
+        </p>
       </fieldset>
       <button class="btn" type="submit">Показать</button>
     </form>
@@ -77,15 +100,16 @@
       <div class="catalogue-filter">
         <h3 class="filter-name">Сортировать:</h3>
         <ul class="catalogue-filter-list">
-          <li><a href="#">По цене</a></li>
+          <li><a class="current" href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
+          <li><a href="#">По названию</a></li>
         </ul>
-        <p>
-          <a class="arrow arrow-down" href="#" aria-label="сортировать в прямом порядке"></a>
+        <p class="sort-by">
+          <!--<a class="arrow arrow-down" href="#" aria-label="сортировать в прямом порядке"></a>-->
+          <a class="arrow arrow-down current" aria-label="сортировать в прямом порядке"></a>
           <a class="arrow arrow-up" href="#" aria-label="сортировать в обратном порядке"></a>
-        </div>
       </p>
+      </div>
       <div class="catalogue-items">
         <article class="catalogue-item">
           <a href="#">
@@ -185,7 +209,7 @@
             Давайте дружить, это выгодно!
           </b>
           <p>
-            Скидка 10% для других из социальных сетей.
+            Скидка 10% для других из социальных сетей. 
           </p>
         </section>
       </div>
