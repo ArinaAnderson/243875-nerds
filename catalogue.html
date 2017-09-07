@@ -104,8 +104,10 @@
           <li><a href="#">По названию</a></li>
         </ul>
         <p class="sort-by">
-          <a class="arrow arrow-down current" aria-label="сортировать в прямом порядке"></a>
-          <a class="arrow arrow-up" href="#" aria-label="сортировать в обратном порядке"></a>
+        <!-- <a class="arrow arrow-down" aria-label="сортировать в прямом порядке"></a>
+          <a class="arrow arrow-up"  aria-label="сортировать в обратном порядке"></a>-->
+          <button class="arrow arrow-down current" type="button"><span class="visually-hidden">сортировать в прямом порядке</span></button>
+          <button class="arrow arrow-up"  type="button"><span class="visually-hidden">сортировать в обратном порядке</span></button>
       </p>
       </div>
       <div class="catalogue-items">
@@ -115,12 +117,14 @@
           </a>
           <section class="catalogue-item-data">
             <a class="catalogue-item-title" href="item-sedona.html">Sedona</a>
-            <p>Информационный сайт для туристов</p>
+            <div class="catalogue-item-content">
+              <p>Информационный сайт<br>для туристов</p>
+            </div>
             <a class="btn" href="#">9 900 руб.</a>
           </section>
           <section class="catalogue-item-data visually-hidden">
             <h3 class="catalogue-item-title">Sedona</h3>
-            <p>Информационный сайт для туристов </p>
+            <p>Информационный сайт для туристов</p>
             <a class="btn">9 900 руб.</a>
           </section>
         </article>
@@ -128,26 +132,86 @@
           <a href="#">
             <img src="img/img-pink.jpg" alt="Сайт Pink" width="358" height="574">
           </a>
+          <section class="catalogue-item-data">
+            <a class="catalogue-item-title" href="item-sedona.html">Pink app</a>
+            <div class="catalogue-item-content">
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+            </div>
+            <a class="btn" href="#">9 900 руб.</a>
+          </section>
+          <section class="catalogue-item-data visually-hidden">
+            <h3 class="catalogue-item-title">Pink app</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </article>
         <article class="catalogue-item">
           <a href="#">
             <img src="img/img-barbershop.jpg" alt="Сайт Барбершоп Бородинский" width="358" height="574">
           </a>
+          <section class="catalogue-item-data">
+            <a class="catalogue-item-title" href="item-sedona.html">Barbershop</a>
+            <div class="catalogue-item-content">
+              <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+            </div>
+            <a class="btn" href="#">9 900 руб.</a>
+          </section>
+          <section class="catalogue-item-data visually-hidden">
+            <h3 class="catalogue-item-title">Barbershop</h3>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </article>
         <article class="catalogue-item">
-          <a href="#" tabindex="0">
+          <a href="#">
             <img src="img/img-mishka.jpg" alt="Сайт Мишка" width="358" height="574">
           </a>
+          <section class="catalogue-item-data">
+            <a class="catalogue-item-title" href="item-sedona.html">Mishka</a>
+            <div class="catalogue-item-content">
+              <p>Интернет-магазин<br>вязаных игрушек</p>
+            </div>
+            <a class="btn" href="#">9 900 руб.</a>
+          </section>
+          <section class="catalogue-item-data visually-hidden">
+            <h3 class="catalogue-item-title">Mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </article>
         <article class="catalogue-item">
           <a href="#">
             <img src="img/img-aplus.jpg" alt="Сайт Aplus" width="358" height="574">
           </a>
+          <section class="catalogue-item-data">
+            <a class="catalogue-item-title" href="item-sedona.html">A Plus</a>
+            <div class="catalogue-item-content">
+              <p>Лендинг курсов повышения квалификации</p>
+            </div>
+            <a class="btn" href="#">9 900 руб.</a>
+          </section>
+          <section class="catalogue-item-data visually-hidden">
+            <h3 class="catalogue-item-title">A Plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </article>
         <article class="catalogue-item">
           <a href="#">
             <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358" height="574">
           </a>
+          <section class="catalogue-item-data">
+            <a class="catalogue-item-title" href="item-sedona.html">Кваст</a>
+            <div class="catalogue-item-content">
+              <p>Промо-сайт производителя крафтового кваса</p>
+            </div>
+            <a class="btn" href="#">9 900 руб.</a>
+          </section>
+          <section class="catalogue-item-data visually-hidden">
+            <h3 class="catalogue-item-title">Кваст</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </article>
       </div>
       <h2 class="visually-hidden">Навигация по страницам</h2>
@@ -170,42 +234,54 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты студии</h2>
-        <div class="contacts-info">
-          <h3 class="contacts-info-title">
-            Nёrds design studio 
-          </h3>
-          <div class="contacts-text">
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>
-              тел. +7 (812) 275-75-75
-            </p>
-          </div>
-          <button class="btn" type="button">
-            Напишите нам
-          </button>
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты студии</h2>
+      <div class="contacts-container">
+        <div class="container">
+          <section class="contacts-info">
+            <h3 class="contacts-info-title">
+              Nёrds design studio 
+            </h3>
+            <div class="contacts-text">
+              <p>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p>
+                тел. +7 (812) 275-75-75
+              </p>
+            </div>
+            <a class="btn write-us-btn" href="write-us.html">
+              Напишите нам
+            </a>
+          </section>
         </div>
+      </div> 
+      <div class="i-map-container"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863704!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sus!4v1504743156845" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="map-container">
+        <div class="container">
         <section class="footer-map">
           <h2 class="visually-hidden">Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
-          <img src="img/map&marker.png" alt="" width="1440" height="416"> 
-        </section> 
-      </section>
+          <img src="img/map&marker.png" alt="" width="1440" height="416">
+        </section>
+      </div>
+    </section>
+    
+    <div class="container">
       <div class="footer-bottom">
         <section class="footer-social">
           <h2 class="visually-hidden">Дизайн-студия nёrds в социальных сетях</h2>
           <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
-            <svg id="vk" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)"/></svg>
+            <svg id="vk" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)"></svg>
           </a>
           <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
-          <svg id="fb" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
+            <svg id="fb" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
           </a>
           <a class="social-btn social-btn-inst" href="#" aria-label="Instagram">
-          <svg id="insta" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>insta-icon</title><path class="cls-1" d="M18,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V3A3,3,0,0,0,18,0ZM10.5,7A3.5,3.5,0,1,1,7,10.5,3.5,3.5,0,0,1,10.5,7ZM18,18H3V9H4.18A6.5,6.5,0,1,0,16.82,9H18ZM18,7H14V3h4Z"/></svg>
+            <svg id="insta" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="21" height="21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>insta-icon</title><path class="cls-1" d="M18,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V3A3,3,0,0,0,18,0ZM10.5,7A3.5,3.5,0,1,1,7,10.5,3.5,3.5,0,0,1,10.5,7ZM18,18H3V9H4.18A6.5,6.5,0,1,0,16.82,9H18ZM18,7H14V3h4Z"/></svg>
           </a>
         </section>
         <section class="footer-promo">
@@ -221,26 +297,29 @@
     </div>
   </footer>
 
-<div class="container">
-  <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="half-width">
-        <label for="fullname">Ваше имя:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p class="half-width">
-        <label for="email">Ваш e-mail:</label>
-        <input type="text" id="email" name="email" placeholder="Для отправки ответа">
-      </p>
-      <p class="one-width">  
-        <label for="text">Текст письма:</label>
-        <textarea id="text" placeholder="В свободной форме" rows="5"></textarea>
-      </p>
-      <button class="btn" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  </section>
-</div>
+  <div class="container">
+    <section class="modal modal-write-us modal-none">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="half-width">
+          <label for="fullname">Ваше имя:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="half-width">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" id="email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="one-width">  
+          <label for="text">Текст письма:</label>
+          <textarea id="text" placeholder="В свободной форме" rows="5"></textarea>
+        </p>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+  </div>
+
+  <script src="js/popup.js"></script>
+
 </body>
 </html>
