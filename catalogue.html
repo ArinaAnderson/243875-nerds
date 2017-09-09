@@ -29,208 +29,208 @@
     </div>
   </header>
 
-  <main class="container">
-   <div class="inner-page-content">
-    <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-      <h2 class="visually-hidden">Фильтры готовых шаблонов</h2>
-      <fieldset class="filter-form-price">
-        <legend class="filter-name">Стоимость:</legend>
-        <div class="price-indicator">
-          <div class="scale">
-            <div class="bar" style="width:70%">
+  <main>
+    <div class="container">
+      <div class="inner-page-content">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="visually-hidden">Фильтры готовых шаблонов</h2>
+          <fieldset class="filter-form-price">
+            <legend class="filter-name">Стоимость:</legend>
+            <div class="price-indicator">
+              <div class="scale">
+                <div class="bar" style="width:70%">
+                </div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
             </div>
-          </div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
-        </div>
-        <div class="price-controls">
-          <p class="min-price">
-            <label for="min-price">от</label>
-            <input type="text" id="min-price" name="min-price" value="0">
-          </p>
-          <p class="max-price"> 
-            <label for="max-price">до</label>
-            <input type="text" id="max-price" name="max-price" value="15 000">
-          </p>
-        </div>
-      </fieldset>
-      <fieldset class="filter-form-group">
-        <legend class="filter-name">Сетка:</legend>
-        <p>
-          <input class="visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive" checked>
-          <label for="adaptive">Адаптивная</label>
-        </p>
-        <p>
-          <input class="visually-hidden" type="radio" id="fixed" name="grid" value="fixed">
-          <label for="fixed">Фиксированная</label>
-        </p>
-        <p>
-          <input class="visually-hidden" type="radio" id="responsive" name="grid" value="responsive">
-          <label for="responsive">Резиновая</label>
-        </p>
-      </fieldset>
-      <fieldset class="filter-form-group">
-        <legend class="filter-name">Особенности:</legend>
-        <p>
-          <input class="visually-hidden" type="checkbox" id="slider" name="slider">
-          <label for="slider">Слайдер</label>
-        </p>
-        <p>
-          <input class="visually-hidden" type="checkbox" id="features-list" name="features-list">
-          <label for="features-list">Блок преимуществ</label>
-        </p>
-        <p> 
-          <input class="visually-hidden" type="checkbox" id="news" name="news">
-          <label for="news">Новости</label>
-        </p>
-        <p>
-          <input class="visually-hidden" type="checkbox" id="gallery" name="gallery">
-          <label for="gallery">Галерея</label>
-        </p>
-        <p>
-          <input class="visually-hidden" type="checkbox" id="cart" name="cart">
-          <label for="cart">Корзина</label>
-        </p>
-      </fieldset>
-      <button class="btn" type="submit">Показать</button>
-    </form>
+            <div class="price-controls">
+              <p class="min-price">
+                <label for="min-price">от</label>
+                <input type="text" id="min-price" name="min-price" value="0">
+              </p>
+              <p class="max-price"> 
+                <label for="max-price">до</label>
+                <input type="text" id="max-price" name="max-price" value="15 000">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form-group">
+            <legend class="filter-name">Сетка:</legend>
+            <p>
+              <input class="visually-hidden" type="radio" id="adaptive" name="grid" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </p>
+            <p>
+              <input class="visually-hidden" type="radio" id="fixed" name="grid" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </p>
+            <p>
+              <input class="visually-hidden" type="radio" id="responsive" name="grid" value="responsive">
+              <label for="responsive">Резиновая</label>
+            </p>
+          </fieldset>
+          <fieldset class="filter-form-group">
+            <legend class="filter-name">Особенности:</legend>
+            <p>
+              <input class="visually-hidden" type="checkbox" id="slider" name="slider">
+              <label for="slider">Слайдер</label>
+            </p>
+            <p>
+              <input class="visually-hidden" type="checkbox" id="features-list" name="features-list">
+              <label for="features-list">Блок преимуществ</label>
+            </p>
+            <p> 
+              <input class="visually-hidden" type="checkbox" id="news" name="news">
+              <label for="news">Новости</label>
+            </p>
+            <p>
+              <input class="visually-hidden" type="checkbox" id="gallery" name="gallery">
+              <label for="gallery">Галерея</label>
+            </p>
+            <p>
+              <input class="visually-hidden" type="checkbox" id="cart" name="cart">
+              <label for="cart">Корзина</label>
+            </p>
+          </fieldset>
+          <button class="btn" type="submit">Показать</button>
+        </form>
 
-    <section class="catalogue">
-      <div class="catalogue-filter">
-        <h3 class="filter-name">Сортировать:</h3>
-        <ul class="catalogue-filter-list">
-          <li><a class="current" href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По названию</a></li>
-        </ul>
-        <p class="sort-by">
-        <!-- <a class="arrow arrow-down" aria-label="сортировать в прямом порядке"></a>
-          <a class="arrow arrow-up"  aria-label="сортировать в обратном порядке"></a>-->
-          <button class="arrow arrow-down current" type="button"><span class="visually-hidden">сортировать в прямом порядке</span></button>
-          <button class="arrow arrow-up"  type="button"><span class="visually-hidden">сортировать в обратном порядке</span></button>
-      </p>
-      </div>
-      <div class="catalogue-items">
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">Sedona</a>
-            <div class="catalogue-item-content">
-              <p>Информационный сайт<br>для туристов</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-pink.jpg" alt="Сайт Pink" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">Pink app</a>
-            <div class="catalogue-item-content">
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">Pink app</h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-barbershop.jpg" alt="Сайт Барбершоп Бородинский" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">Barbershop</a>
-            <div class="catalogue-item-content">
-              <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">Barbershop</h3>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-mishka.jpg" alt="Сайт Мишка" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">Mishka</a>
-            <div class="catalogue-item-content">
-              <p>Интернет-магазин<br>вязаных игрушек</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">Mishka</h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-aplus.jpg" alt="Сайт Aplus" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">A Plus</a>
-            <div class="catalogue-item-content">
-              <p>Лендинг курсов повышения квалификации</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">A Plus</h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-        <article class="catalogue-item">
-          <a href="#">
-            <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358" height="574">
-          </a>
-          <section class="catalogue-item-data">
-            <a class="catalogue-item-title" href="item-sedona.html">Кваст</a>
-            <div class="catalogue-item-content">
-              <p>Промо-сайт производителя крафтового кваса</p>
-            </div>
-            <a class="btn" href="#">9 900 руб.</a>
-          </section>
-          <section class="catalogue-item-data visually-hidden">
-            <h3 class="catalogue-item-title">Кваст</h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="btn">9 900 руб.</a>
-          </section>
-        </article>
-      </div>
-      <h2 class="visually-hidden">Навигация по страницам</h2>
-      <ul class="catalogue-paginaton">
-        <li class="catalogue-paginaton-current">
-          <span class="btn-page">1</span>
-        </li>
-        <li>
-          <a class="btn-page" href="#">2</a>
-        </li>
-        <li>
-          <a class="btn-page" href="#">3</a>
-        </li>
-        <li>
-          <a class="btn-page" href="#">следующая</a>
-        </li>
-      </ul>
-    </section> 
-   </div> 
+        <section class="catalogue">
+          <div class="catalogue-filter">
+            <h3 class="filter-name">Сортировать:</h3>
+            <ul class="catalogue-filter-list">
+              <li><a class="current" href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+            </ul>
+            <p class="sort-by">
+              <button class="arrow arrow-down current" type="button"><span class="visually-hidden">сортировать в прямом порядке</span></button>
+              <button class="arrow arrow-up"  type="button"><span class="visually-hidden">сортировать в обратном порядке</span></button>
+            </p>
+          </div>
+          <div class="catalogue-items">
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">Sedona</a>
+                <div class="catalogue-item-content">
+                  <p>Информационный сайт<br>для туристов</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-pink.jpg" alt="Сайт Pink" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">Pink app</a>
+                <div class="catalogue-item-content">
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">Pink app</h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-barbershop.jpg" alt="Сайт Барбершоп Бородинский" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">Barbershop</a>
+                <div class="catalogue-item-content">
+                  <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">Barbershop</h3>
+                <p>Сайт салоны красоты. Для мужчин, да.</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-mishka.jpg" alt="Сайт Мишка" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">Mishka</a>
+                <div class="catalogue-item-content">
+                  <p>Интернет-магазин<br>вязаных игрушек</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">Mishka</h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-aplus.jpg" alt="Сайт Aplus" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">A Plus</a>
+                <div class="catalogue-item-content">
+                  <p>Лендинг курсов повышения квалификации</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">A Plus</h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="catalogue-item">
+              <a href="#">
+                <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358" height="574">
+              </a>
+              <section class="catalogue-item-data">
+                <a class="catalogue-item-title" href="item-sedona.html">Кваст</a>
+                <div class="catalogue-item-content">
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                </div>
+                <a class="btn" href="#">9 900 руб.</a>
+              </section>
+              <section class="catalogue-item-data visually-hidden">
+                <h3 class="catalogue-item-title">Кваст</h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="btn">9 900 руб.</a>
+              </section>
+            </article>
+          </div>
+          <h2 class="visually-hidden">Навигация по страницам</h2>
+          <ul class="catalogue-paginaton">
+            <li class="catalogue-paginaton-current">
+              <span class="btn-page">1</span>
+            </li>
+            <li>
+              <a class="btn-page" href="#">2</a>
+            </li>
+            <li>
+              <a class="btn-page" href="#">3</a>
+            </li>
+            <li>
+              <a class="btn-page" href="#">следующая</a>
+            </li>
+          </ul>
+        </section> 
+      </div> 
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -258,15 +258,18 @@
         </div>
       </div> 
       <div class="i-map-container"> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863704!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sus!4v1504743156845" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863704!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sus!4v1504743156845"  allowfullscreen>
         </iframe>
       </div>
       <div class="map-container">
         <div class="container">
-        <section class="footer-map">
-          <h2 class="visually-hidden">Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
-          <img src="img/map&marker.png" alt="" width="1440" height="416">
-        </section>
+          <section class="footer-map">
+            <h2 class="visually-hidden">
+              Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </h2>
+            <img src="img/map&marker_cropped.png" alt="" width="1200" height="416">
+          </section>
+        </div>
       </div>
     </section>
     
@@ -275,7 +278,7 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Дизайн-студия nёrds в социальных сетях</h2>
           <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте">
-            <svg id="vk" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)"></svg>
+            <svg id="vk" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="26" height="15" ><defs><style>.cls-1{fill:#fff;}</style></defs><title>vk-icon</title><path class="cls-1" d="M16.14,11.51c1-.31,2.18,2,3.48,2.94a2.45,2.45,0,0,0,1.73.53l3.47-.05s1.82-.11,1-1.55a11.7,11.7,0,0,0-2.58-3c-2.18-2-1.88-1.71.74-5.24,1.6-2.15,2.24-3.47,2-4S24.6.69,24.6.69l-3.91,0a.8.8,0,0,0-.85.51,23.28,23.28,0,0,1-1.44,3.08c-1.74,3-2.44,3.15-2.72,3-.66-.43-.49-1.74-.49-2.66,0-2.9.43-4.11-.85-4.42A6.61,6.61,0,0,0,12.5,0,8.29,8.29,0,0,0,9.26.33c-.44.22-.79.71-.58.74a1.75,1.75,0,0,1,1.15.59,3.86,3.86,0,0,1,.39,1.79s.23,3.41-.54,3.83c-.53.29-1.25-.3-2.8-3A25.38,25.38,0,0,1,5.49,1.35,1.18,1.18,0,0,0,5.16.9a1.61,1.61,0,0,0-.6-.24L.85.68S.29.7.08.95s0,.67,0,.67S3,8.49,6.27,12a8.86,8.86,0,0,0,6.45,3h1.56a1.32,1.32,0,0,0,.71-.31,1.14,1.14,0,0,0,.21-.69S15.17,11.82,16.14,11.51Z" transform="translate(0 0)"/></svg>
           </a>
           <a class="social-btn social-btn-fb" href="#" aria-label="Facebook">
             <svg id="fb" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fb-icon</title><path class="cls-1" d="M12,4V0H8A4,4,0,0,0,4,4V8H0v4H4V22H8V12h4V8H8V4Z"/></svg>
