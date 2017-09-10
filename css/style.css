@@ -544,7 +544,7 @@ img {
 .about-us .columns-left *:first-child,
 .about-us .columns-right *:first-child,
 .about-us section *:first-child {
-  margin-top 0;
+  margin-top: 0;
 }
 .about-us section:not(:first-child) {
   padding-top: 40px;
