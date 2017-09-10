@@ -309,7 +309,7 @@ img {
   margin: 0;
 }
 .header-slider p {
-  width: 460px;
+  width: 430px;
 
   padding: 0;
   margin: 27px 0 39px 0;
@@ -541,15 +541,9 @@ img {
 .features *:last-child {
   margin-bottom: 0;
 }
-.about-us .columns-left *:first-child,
-.about-us .columns-right *:first-child,
-.about-us section *:first-child {
-  margin-top: 0;
-}
 .about-us section:not(:first-child) {
   padding-top: 40px;
 }
-
 
 
 .portfolio {
@@ -690,7 +684,7 @@ img {
   z-index: 2;
 }
 .container-1 {
-  width: 1160px;
+  width: 1200px;
 
   margin: 0 auto;
 }
