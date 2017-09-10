@@ -218,7 +218,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
 
-  width: 486px;
+  width: 510px;
 
   padding: 0;
   margin: 0;
@@ -408,7 +408,7 @@ img {
 
 
 .about-us {
-  padding: 0 0 70px 0;
+  padding: 0 0 75px 0;
   margin: 0;
 }
 .about-us .columns {
@@ -416,7 +416,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 
-  padding: 38px 0 0 0;
+  padding: 38px 0 0 0;/* padding: 38px 0 0 0;*/
   margin: 0;
 }
 .about-us .columns-left {
@@ -457,7 +457,7 @@ img {
   height: 208px;
 }
 .about-us h3 {
-  margin-top: 60px 0 30px 0;
+  margin-top: 60px 0 28px 0;
   padding: 0;
 
   font-weight: 700;
@@ -467,6 +467,9 @@ img {
 }
 .about-us h3:first-child {
   margin-top: 0;
+}
+.features .features-title {
+  margin-left: 20px;
 }
 .about-us ul {
   margin: 25px 0 60px 0;
@@ -478,7 +481,7 @@ img {
 }
 .specialties-list li {
   padding: 0 0 0 35px;
-  margin: 0 0 25px 0;
+  margin: 0 0 23px 0;
   position: relative;
 
   color: #283136;
@@ -627,7 +630,7 @@ img {
   padding: 80px 0 0 0;
 }
 .inner-page .main-footer{
-  padding: 58px 0 0 0;
+  padding: 60px 0 0 0;
 }
 .footer-contacts {
   width: 100%;
@@ -722,7 +725,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
 
-  padding: 73px 0 55px 0;
+  padding: 70px 0 55px 0;
   margin: 0;
 }
 .footer-social {
@@ -821,7 +824,7 @@ iframe {
 .filter-form .filter-form-price {
   width: 260px;
   padding: 0;
-  margin: 3px 0 55px 0;
+  margin: 3px 0 58px 0;
 }
 .filter-form-price .filter-name {
   margin: 0 0 53px 0;
