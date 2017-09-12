@@ -1,5 +1,3 @@
-
-
   var writeUsButton=document.querySelector(".write-us-btn");
   var writeUsPopup=document.querySelector(".modal-write-us");
   var closeButton=document.querySelector(".modal-close");
@@ -23,6 +21,7 @@
     } else {
     fullName.focus();
     }
+  
   });
 
   writeUsButton.addEventListener("keydown",function(evt) {
@@ -48,6 +47,8 @@
   writeUsForm.addEventListener("submit", function(evt) {
     if(!fullName.value || !email.value) {
       evt.preventDefault();
+      writeUsPopup.classList.remove("modal-error");
+      writeUsPopup.offsetWidth=writeUsPopup.offsetWidth;
       writeUsPopup.classList.add("modal-error");
     } else {
         localStorage.setItem("fullName", fullName.value);
@@ -105,7 +106,3 @@
     }
   });
 
-
-
-
- 
