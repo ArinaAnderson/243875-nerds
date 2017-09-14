@@ -380,7 +380,7 @@ img {
 .products li:nth-child(3n) {
   margin-right: 0;
 }
-.products .products-category h3 {
+.products-category h3 {
   margin: 0 0 18px 0;
   font-weight: 700;
   font-size: 24px;
@@ -452,7 +452,7 @@ img {
   padding: 0;
   margin: 2px 0 0 0;
 }
-.about-us .about-us-logo img {
+.about-us-logo img {
   width: 360px;
   height: 208px;
 }
@@ -510,7 +510,7 @@ img {
   border-collapse: collapse;
   border: none;
 }
-.features .features-table th {
+.features-table th {
   width: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -523,10 +523,10 @@ img {
   line-height: 65px;
   text-align: left;
 }
-.features .features-table sup {
+.features-table sup {
   font-size: 28px;
 }
-.features .features-table td {
+.features-table td {
   padding: 8px 0 0 0;
 
   line-height: 18px;
@@ -587,33 +587,33 @@ img {
 .portfolio img {
   display: block;
 }
-.portfolio .portfolio-item-htmlacademy img {
+.portfolio-item-htmlacademy img {
   width: 199px;
   height: 68px;
 }
-.portfolio .portfolio-item-borodinskiy img {
+.portfolio-item-borodinskiy img {
   width: 209px;
   height: 86px;
 }
-.portfolio .portfolio-item-pink img {
+.portfolio-item-pink img {
   width: 185px;
   height: 52px;
 }
-.portfolio .portfolio-item-mishka img {
+.portfolio-item-mishka img {
   width: 173px;
   height: 84px;
 }
-.portfolio .portfolio-item img {
+.portfolio-item img {
   opacity: 0.2;
 }
-.portfolio .portfolio-item:hover img {
+.portfolio-item:hover img {
   opacity: 1;
 }
-.portfolio .portfolio-item:focus img {
+.portfolio-item:focus img {
   opacity: 1;
   outline: none;
 }
-.portfolio .portfolio-item:active img {
+.portfolio-item:active img {
   opacity: 0.1;
 }
 
@@ -784,7 +784,7 @@ iframe {
 .inner-page .main-header  {
   padding-bottom: 1px;
 }
-.inner-page .main-header h1 {
+.inner-page h1 {
   padding: 0 0 1px 0;
   margin: 77px 0 105px 0;
   
@@ -1130,7 +1130,7 @@ display: -webkit-box;
 
   margin: 0 0 33px 0;
 }
-.catalogue .catalogue-item > a {
+.catalogue-item > a {
   display: block;
   width: 360px;
   
@@ -1138,7 +1138,7 @@ display: -webkit-box;
   margin: 0; 
   position: relative;
 }
-.catalogue .catalogue-item > a::before {
+.catalogue-item > a::before {
   content: "";
   display: block;
   width: 360px;
@@ -1155,7 +1155,7 @@ display: -webkit-box;
 
   opacity: 0.12;
 }
-.catalogue .catalogue-item img {
+.catalogue-item img {
   display: block;
   width: 358px;
   height: 574px;
